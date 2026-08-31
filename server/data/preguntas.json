@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "categoria": "Ciencia",
+    "pregunta": "¿Cuál es el elemento químico más abundante en el universo?",
+    "opciones": ["Oxígeno", "Hidrógeno", "Helio", "Carbono"],
+    "respuestaCorrecta": 1,
+    "dificultad": "Media"
+  },
+  {
+    "id": 2,
+    "categoria": "Programación",
+    "pregunta": "¿Qué método se utiliza para convertir un objeto de JavaScript en una cadena JSON?",
+    "opciones": ["JSON.parse()", "JSON.stringify()", "JSON.object()", "JSON.convert()"],
+    "respuestaCorrecta": 1,
+    "dificultad": "Fácil"
+  },
+  {
+    "id": 3,
+    "categoria": "Historia",
+    "pregunta": "¿En qué año llegó la humanidad a la Luna en la misión Apolo 11?",
+    "opciones": ["1965", "1969", "1972", "1975"],
+    "respuestaCorrecta": 1,
+    "dificultad": "Fácil"
+  },
+  {
+    "id": 4,
+    "categoria": "Geografía",
+    "pregunta": "¿Cuál es el río más largo y caudaloso del mundo?",
+    "opciones": ["Nilo", "Amazonas", "Misisipi", "Yangtsé"],
+    "respuestaCorrecta": 1,
+    "dificultad": "Fácil"
+  },
+  {
+    "id": 5,
+    "categoria": "Programación",
+    "pregunta": "¿Cuál es la función en JavaScript para prevenir el comportamiento por defecto de un evento?",
+    "opciones": ["event.stop()", "event.preventDefault()", "event.cancel()", "event.halt()"],
+    "respuestaCorrecta": 1,
+    "dificultad": "Fácil"
+  },
+  {
+    "id": 6,
+    "categoria": "Ciencia",
+    "pregunta": "¿Qué orgánulo celular es conocido como la central energética de la célula?",
+    "opciones": ["Núcleo", "Mitocondria", "Ribosoma", "Aparato de Golgi"],
+    "respuestaCorrecta": 1,
+    "dificultad": "Media"
+  },
+  {
+    "id": 7,
+    "categoria": "Cine",
+    "pregunta": "¿Quién dirigió la trilogía original de películas de 'El Señor de los Anillos'?",
+    "opciones": ["Steven Spielberg", "Peter Jackson", "Christopher Nolan", "James Cameron"],
+    "respuestaCorrecta": 1,
+    "dificultad": "Fácil"
+  },
+  {
+    "id": 8,
+    "categoria": "Historia",
+    "pregunta": "¿Qué célebre científico formuló la teoría de la relatividad general?",
+    "opciones": ["Isaac Newton", "Albert Einstein", "Nikola Tesla", "Galileo Galilei"],
+    "respuestaCorrecta": 1,
+    "dificultad": "Fácil"
+  }
+]

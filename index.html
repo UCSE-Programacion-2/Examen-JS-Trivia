@@ -1,67 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🎮 Juego de Trivia - Examen JavaScript</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Trivia del Conocimiento - Examen de JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="game-container">
-      <!-- Pantalla de inicio -->
-      <div id="startScreen" class="start-screen">
-        <h1>🎮 Juego de Trivia</h1>
-        <p>¡Pon a prueba tus conocimientos!</p>
-        <ul style="text-align: left; max-width: 400px; margin: 0 auto">
-          <li>📝 5 preguntas de cultura general</li>
-          <li>⏰ 10 segundos por pregunta</li>
-          <li>🏆 +10 puntos por respuesta correcta</li>
-          <li>💪 ¡Demuestra tus conocimientos!</li>
+    <header class="main-header">
+      <div class="header-container">
+        <h1>🧠 Trivia del Conocimiento</h1>
+        <p class="subtitle">Pon a prueba tus conocimientos con preguntas interactivas</p>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="card panel-control">
+        <div class="control-row">
+          <div class="form-group">
+            <label for="select-categoria">Seleccionar Categoría:</label>
+            <select id="select-categoria">
+              <option value="todas">Todas las categorías</option>
+            </select>
+          </div>
+          <button type="button" id="btn-iniciar" class="btn btn-primary">Cargar Preguntas</button>
+        </div>
+        <div class="marcador-container">
+          <span class="marcador-label">Puntaje Actual:</span>
+          <span id="puntaje-actual" class="marcador-valor">0</span>
+        </div>
+      </section>
+
+      <section id="pregunta-card" class="card pregunta-card hidden">
+        <div class="pregunta-header">
+          <span id="categoria-badge" class="badge">Categoría</span>
+          <span id="pregunta-numero" class="pregunta-contador">Pregunta 1</span>
+        </div>
+        <h2 id="pregunta-texto" class="pregunta-texto">Texto de la pregunta</h2>
+        <div id="opciones-container" class="opciones-grid">
+          <!-- Opciones inyectadas dinámicamente -->
+        </div>
+        <div id="feedback-mensaje" class="mensaje hidden"></div>
+        <div class="acciones-pregunta">
+          <button type="button" id="btn-siguiente" class="btn btn-primary hidden">
+            Siguiente Pregunta ➡️
+          </button>
+        </div>
+      </section>
+
+      <section class="card historial-section">
+        <div class="historial-header">
+          <h2>📋 Historial de Respuestas</h2>
+          <button type="button" id="btn-limpiar-historial" class="btn btn-outline">
+            Limpiar Historial
+          </button>
+        </div>
+        <ul id="historial-lista" class="historial-lista">
+          <!-- Historial dinámico -->
         </ul>
-        <button id="startBtn" class="start-btn">Comenzar Juego</button>
-      </div>
+      </section>
+    </main>
 
-      <!-- Pantalla del juego -->
-      <div id="gameScreen" class="game-screen">
-        <!-- Información del juego -->
-        <div class="question-counter">
-          Pregunta <span id="currentQuestion">1</span> de
-          <span id="totalQuestions">5</span>
-        </div>
+    <footer class="main-footer">
+      <p>Programación II - Examen Práctico de Frontend con JavaScript</p>
+    </footer>
 
-        <div class="score-display">
-          Puntuación: <span id="currentScore">0</span> puntos
-        </div>
-
-        <!-- Temporizador -->
-        <div class="timer-container">
-          <div class="timer-bar">
-            <div id="timerFill" class="timer-fill"></div>
-          </div>
-          <div class="timer-text">
-            Tiempo restante: <span id="timeLeft">10</span> segundos
-          </div>
-        </div>
-
-        <!-- Contenedor de la pregunta -->
-        <div class="question-container">
-          <div id="questionText" class="question-text">
-            <!-- Aquí se cargará la pregunta actual -->
-          </div>
-
-          <div id="optionsContainer" class="options-container">
-            <!-- Aquí se cargarán las opciones de respuesta -->
-          </div>
-
-          <button id="nextBtn" class="next-btn">Siguiente Pregunta</button>
-        </div>
-      </div>
-    </div>
-
-    <script src="./js/juego.js"></script>
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
